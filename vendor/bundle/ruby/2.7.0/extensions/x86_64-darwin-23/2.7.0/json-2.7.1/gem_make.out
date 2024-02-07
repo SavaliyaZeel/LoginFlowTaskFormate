@@ -1,0 +1,13 @@
+current directory: /Users/mac/Documents/zeel/test/vendor/bundle/ruby/2.7.0/gems/json-2.7.1/ext/json
+/Users/mac/.rbenv/versions/2.7.4/bin/ruby -I /Users/mac/.rbenv/versions/2.7.4/lib/ruby/2.7.0 -r ./siteconf20240206-2592-190kgqd.rb extconf.rb
+creating Makefile
+
+current directory: /Users/mac/Documents/zeel/test/vendor/bundle/ruby/2.7.0/gems/json-2.7.1/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/mac/Documents/zeel/test/vendor/bundle/ruby/2.7.0/gems/json-2.7.1/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/mac/Documents/zeel/test/vendor/bundle/ruby/2.7.0/gems/json-2.7.1/ext/json
+make "DESTDIR=" install
