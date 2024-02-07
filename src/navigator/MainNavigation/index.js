@@ -12,7 +12,8 @@ const MainNavigation = () => {
     }));
     return (
             <NavigationContainer>
-                <Stack.Navigator screenOptions={{
+                <Stack.Navigator 
+                screenOptions={{
                     headerShown: false
                 }}>
                     {!userData.token ? (
