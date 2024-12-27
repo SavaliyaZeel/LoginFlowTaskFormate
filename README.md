@@ -77,3 +77,24 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+
+
+
+### For Responsive font (scale functions)
+
+```bash
+import {Dimensions} from 'react-native';
+
+export const {width, height} = Dimensions.get('window');
+const [shortDimension, longDimension] = width < height ? [width, height] : [height, width];
+
+const guidelineBaseWidth = 360;
+const guidelineBaseHeight = 640;
+const FACTOR = 0.5;
+
+export const scale = (size: number) => (shortDimension / guidelineBaseWidth) * size;
+export const verticalScale = (size: number) => (longDimension / guidelineBaseHeight) * size;
+export const moderateScale = (size: number, factor = FACTOR) => size + (scale(size) - size) * factor;
+export const moderateVerticalScale = (size: number, factor = FACTOR) => size + (verticalScale(size) - size) * factor;
+```
